@@ -1,0 +1,30 @@
+<h4>
+					Perguntas
+				</h4>
+				<?php
+				require_once("conexao.php");
+					$consultaPergunta = mysqli_query($conexao, "SELECT conteudo_pergunta, id_pergunta, id_user_fk FROM pergunta ORDER BY id_pergunta DESC LIMIT 5");
+					if (!$consultaPergunta) {
+						$erro = mysqli_error($conexao);
+						//header("location:erro.php?erro=$erro");
+						echo("$erro");
+					}
+					else 
+					{   
+						while ($row = mysqli_fetch_array($consultaPergunta, MYSQL_ASSOC)){
+							$sqlUser = mysqli_query($conexao, 'SELECT * FROM user WHERE id_user = '.$row["id_user_fk"]);
+							while ($rowUser = mysqli_fetch_array($sqlUser, MYSQL_ASSOC))
+							{
+								echo("<div class='jumbotron'>");
+								echo ("<p>Pergunta de ".$rowUser["nome"]."</p> <br> <p>".$row['conteudo_pergunta']."</p>");
+								$sqlRespostas = mysqli_query($conexao, 'SELECT count(distinct(id_resposta)), id_pergunta  FROM resposta, pergunta WHERE id_pergunta = id_pergunta_fk AND id_pergunta_fk = '.$row["id_pergunta"]);
+								while ($rowResposta = mysqli_fetch_array($sqlRespostas, MYSQL_ASSOC))
+								{
+									echo("<a href='respostas.php?id_pergunta=".$rowResposta['id_pergunta']."'>Veja as ".$rowResposta['count(distinct(id_resposta))']." respostas</a>");
+								}
+								echo("</div>");
+							}
+						}
+					}
+				?>
+			</div>

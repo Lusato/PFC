@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Urban Elegance Bold";
+  src: url("../fonts/Urban Elegance Bold.ttf");
+}
+
+#link{
+	color: #0000FF;
+}
+. a{
+	color: #0000FF;
+}
+.img{
+	background-position: 90%, 90%;
+}
+
+.f{
+    color:#000000;
+}
+.fir{
+	background-color: #B6ACAC;
+    color: #000000;
+}
+.h{
+    color: #F3A408;
+}
+
+.h4{
+	color: black;
+}
+
+#titulo{
+    font-family: Times New Roman;
+    background-color:#B1A5A5;
+    color:black;
+}
+
+#texto{
+    text-align: center;
+}
+body{
+    background-color:#878585;
+}
+.row{
+    background-color:#686161;
+}
+
+#u{
+	background-color:#A52A2A;
+}
+
+.jumbotron{
+    background-color:#B2A4A4;
+    color: black;
+    font-family: "Urban Elegance Bold";
+    padding: 0px !important;
+	width: auto;
+    height: auto;
+}
+
+.content{
+    padding:0px 60px 60px 60px;
+}
+.content2{
+    padding:60px 60px 60px 60px;
+}
+
+.post-content{
+    max-width:90%;
+}
+.post-content img{
+    max-width:100% ;
+}
+
+#espaco{
+    padding:50px;
+    padding: 13%;
+}
+
+#espaco1{
+    padding: 16%;
+}
+
+#imagem{
+    padding: 2%;
+    background-color:#0012A6;
+}
+
+#post-content{
+    max-width:40%;
+}
+#post-content img{
+    max-width:40% ;
+}
+#rodape{
+    text-align: center;
+}
+
+.jumbotron a{
+
+    color: #0E1F88;
+}
+
+.jumbotron > h2 {
+    background-color:#88560E;
+    text-align:center;
+    height:80px;
+    //margin:-60px;
+}
+.jumbotron > h2 > .title{
+    margin-top:23px;
+    //background:black; //testando posição
+    width:auto;
+}
+
+
+.jumbotron > h4 {
+    background-color:#88560E;
+    text-align:center;
+    height:80px;
+    //margin:-60px;
+}
+.jumbotron > h4 > .title{
+    margin-top:23px;
+    color: blue;
+    //background:black; //testando posição
+    width:auto;
+}
+
+.title{
+    position: absolute;
+    text-align:center;
+}
+
+.navbar-default {
+    background-color: #1D4574;
+    border-color: #092A50;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: black;
+    background-color: #ABABAB;
+    font-weight:bold;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
+    color: #E0E0E0;
+    background-color: transparent;
+    font-weight:bold;
+}
